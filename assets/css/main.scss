@@ -121,7 +121,7 @@ h1:before, .anchor:before {
 .author__name {
   display: grid;
   padding-top: 4px;
-  text-align: center;
+  text-align: left;
   word-break: keep-all;
   span {
     grid-area: 1 / 1;
