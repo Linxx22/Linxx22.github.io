@@ -1,0 +1,35 @@
+{% assign count = include.limit | default: site.data.publications.size %}
+{% for paper in site.data.publications limit:count %}
+<article class="{% if include.format == 'text' %}paper-entry{% else %}paper-box{% endif %}">
+  {% if paper.image and include.format != 'text' %}
+  <div class="paper-box-image"><div>
+    <span class="badge">{{ paper.label }}</span>
+    <a href="{{ paper.links.link | default: paper.image }}" aria-label="{{ paper.title | escape }}">
+      <img src="{{ paper.image }}" alt="Figure from {{ paper.label }}" loading="lazy">
+    </a>
+  </div></div>
+  {% endif %}
+  <div class="paper-box-text">
+    <h2>
+      {% if include.format == 'text' %}<span class="publication-label">{{ paper.label }}</span>{% endif %}
+      {% if paper.links.link %}<a href="{{ paper.links.link }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}
+    </h2>
+    <p class="paper-authors">{{ paper.authors }}</p>
+    <p>{{ paper.venue }}
+      {% if paper.links.pdf %} · <a href="{{ paper.links.pdf }}">PDF</a>{% endif %}
+      {% if paper.links.link %} · <a href="{{ paper.links.link }}">DOI</a>{% endif %}
+      {% if paper.badge %} · <strong>{{ paper.badge }}</strong>{% endif %}
+    </p>
+  </div>
+</article>
+{% endfor %}
+{% assign side = site.data.side_paper %}
+<details class="side-paper">
+  <summary><span class="side-paper-icon" aria-hidden="true"></span> A "side hustle" Paper</summary>
+  <h2>
+    {% if include.format == 'text' %}<span class="publication-label">{{ side.label }}</span>{% endif %}
+    <a href="{{ side.link | escape }}">{{ side.title }}</a>
+  </h2>
+  <p class="paper-authors">{{ side.authors }}</p>
+  <p>{{ side.venue }} · <a href="{{ side.pdf }}">PDF</a> · <a href="{{ side.link | escape }}">CNKI</a></p>
+</details>

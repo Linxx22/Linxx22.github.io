@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  © {{ site.time | date: "%Y" }} Xuxuan Lin. All Rights Reserved.
+  {% if page.url == '/' %}
+  <span id="busuanzi_container_site_pv" style="display:none"> · Total Visits: <span id="busuanzi_value_site_pv"></span></span>
+  <span id="busuanzi_container_site_uv" style="display:none"> · Visitors: <span id="busuanzi_value_site_uv"></span></span>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  {% endif %}
+</footer>

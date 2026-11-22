@@ -1,0 +1,41 @@
+title: Xuxuan Lin's Homepage
+description: Ph.D Student in Electronic Science and Technology, Department of Electronic Engineering, Tsinghua University.
+author:
+  name: Xuxuan Lin
+  name_zh: 林旭煊
+  school: Tsinghua University
+  grade: Ph.D Student
+  major: Electronic Science and Technology
+  department: Department of Electronic Engineering
+  avatar: images/graduation-portrait.png
+  links:
+  - title: Email
+    url: mailto:linxx22@mails.tsinghua.edu.cn
+    icon: fas fa-envelope
+  - title: Google Scholar
+    url: https://scholar.google.com/citations?user=R-h9OXsAAAAJ
+    icon: fas fa-graduation-cap
+  - title: IEEE Xplore
+    url: https://ieeexplore.ieee.org/author/278078515728379
+    icon: fas fa-microchip
+include:
+- _pages
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- vendor
+- assets/js/_main.js
+- assets/js/plugins
+- assets/js/vendor
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+    author_profile: true
+sass:
+  sass_dir: _sass
+  style: compressed
+encoding: utf-8

@@ -1,0 +1,185 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+    
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px #888;
+            object-fit: cover;
+        }
+    }
+    
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+    }
+    
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+        
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
+$scroll_offset : 2em;
+h1:before, .anchor:before { 
+    content: ''; 
+    display: block; 
+    position: relative; 
+    width: 0; 
+    height: $scroll_offset; 
+    margin-top: -$scroll_offset;
+}
+
+.badge, .publication-label {
+    color: #fff;
+    background-color: #00369f;
+}
+.publication-label {
+    display: inline-block;
+    padding: .12em .45em;
+    font-size: 11px;
+    line-height: 1.4;
+    vertical-align: .08em;
+    white-space: nowrap;
+}
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    font-size: .8em;
+}
+.author__avatar img { display: block; height: auto; margin-inline: auto; padding: 0; border: 0; }
+.author__name {
+  display: grid;
+  padding-top: 4px;
+  text-align: center;
+  word-break: keep-all;
+  span {
+    grid-area: 1 / 1;
+    animation: alternate-name 10s step-end infinite;
+  }
+  [lang="zh-CN"] { visibility: hidden; animation-delay: -5s; }
+}
+@keyframes alternate-name {
+  0%, 100% { visibility: visible; }
+  50% { visibility: hidden; }
+}
+.author__bio { line-height: 1.5; }
+.education-entry, .internship-entry {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin: 1.35rem 0;
+  img { flex: none; object-fit: contain; }
+  h2, p { margin: 0; line-height: 1.5rem; }
+  h2 { font-size: 1rem; font-weight: 700; }
+}
+.entry-date { color: #525c66; font-size: .9em; }
+.paper-box-text h2, .side-paper h2 { font-size: 1rem; }
+.paper-box, .paper-entry {
+  h2 { margin: 0 0 .6em; }
+  p { margin: .4em 0; }
+}
+.paper-box .paper-box-image img { width: 100%; height: auto; }
+.paper-entry { margin: 1.4em 0; }
+.paper-authors strong { text-decoration: underline; }
+.side-paper { margin: 1.15rem 0; }
+.side-paper summary { cursor: pointer; color: $link-color; }
+.side-paper-icon::before { content: "🙈"; }
+.side-paper[open] .side-paper-icon::before { content: "🤔"; }
+.award-list {
+  list-style: none;
+  padding: 0;
+  li { display: grid; grid-template-columns: 5.5em 1fr; gap: .6em; margin: .85em 0; }
+}
+.site-footer {
+  clear: both;
+  border-top: 1px solid $border-color;
+  margin-top: 2rem;
+  padding: 1.25rem;
+  text-align: center;
+  color: #525c66;
+  font-size: .85em;
+}
+@media (max-width: 924px) {
+  .profile_box { display: grid; grid-template-columns: 75px 1fr; gap: .5rem 1rem; }
+  .author__content { padding: 0; }
+  .author__urls-wrapper { grid-column: 2; margin: 0; }
+  .author__urls_sm { padding: 0; font-size: 1.25rem; }
+  .author__urls_sm a { display: inline-block; padding: .25em; }
+}
+@media (max-width: 767px) {
+  .paper-box { gap: 1em; }
+  .paper-box-image img { display: block; }
+  .paper-box .paper-box-image > div { width: 100%; max-width: 400px; }
+  .masthead__menu-home-item { display: block !important; }
+}

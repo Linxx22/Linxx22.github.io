@@ -1,0 +1,36 @@
+- type: journal
+  title: Analysis and Design of Pattern-Stable Broadband Horizontally Polarized Omnidirectional Antenna Using Asymmetrically Coupled Zeroth-Order Modes
+  authors: <strong>Xuxuan Lin</strong>, Yongjian Zhang, Wendi Yan, Pengyu Fu, Kunpeng Wei, Yue Li
+  venue: <em>IEEE Transactions on Antennas and Propagation</em>, accepted.
+  image: files/IMG/TAP_pattern_stable.png
+  label: IEEE TAP Early Access
+- type: journal
+  title: 'Zeroth-order mode antennas enabled by near-zero-index metamaterials: from theory to applications [Invited]'
+  authors: Yue Li, Pengyu Fu, Ziheng Zhou, Yongjian Zhang, Wendi Yan, Mingzhe Hu, Shuyu Wang, Peihang Li, Xuan Liu,
+    Kaifeng Li, Hanfei Bu, and <strong>Xuxuan Lin</strong>
+  venue: <em>Optical Materials Express</em>, vol. 16, no. 7, pp. 2135–2150, Jul. 2026
+  links:
+    pdf: files/PDF/OME_2026_LXX.pdf
+    link: https://doi.org/10.1364/OME.604768
+  image: files/IMG/OME_2026.png
+  label: OME 2026
+- type: journal
+  title: An Extended Ohmic-Biased Transistor Antenna Enabling Signal Transmission for Integrated Sensing and Communication
+    Application
+  authors: Shuyu Wang, <strong>Xuxuan Lin</strong>, Yuxuan Wang, Yongjian Zhang, Le Chang, Kunpeng Wei, Yue Li
+  venue: <em>IEEE Transactions on Antennas and Propagation</em>, vol. 74, no. 2, pp. 2107–2112, Feb. 2026
+  links:
+    pdf: files/PDF/TAP_2026_LXX.pdf
+    link: https://doi.org/10.1109/TAP.2025.3634985
+  image: files/IMG/TAP_2025.png
+  label: IEEE TAP 2026
+- type: conference
+  image: files/IMG/APS_2025.png
+  badge: 🥇 Honorable Mention
+  title: Broadband Omnidirectional Dual-Polarized Antenna using Multimode Coupling in Wi-Fi 6 Routers
+  authors: <strong>Xuxuan Lin</strong>, Yongjian Zhang, Yue Li
+  venue: <em>IEEE International Symposium on Antennas &amp; Propagation (AP-S)</em>, 2025
+  links:
+    pdf: files/PDF/APS_2025_LXX.pdf
+    link: https://doi.org/10.1109/AP-S/CNC-USNC-URSI55537.2025.11266541
+  label: IEEE AP-S 2025 Oral
