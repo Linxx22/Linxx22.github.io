@@ -4,11 +4,11 @@ permalink: /
 
 {% assign email = site.author.links | where: "title", "Email" | first %}
 
-Welcome to my homepage! I am Xuxuan Lin, originally from Anxi, Fujian—a region renowned as a hometown of Chinese tea. I am currently a Ph.D. student in the Department of Electronic Engineering at Tsinghua University, advised by Associate Professor [Yue Li](https://oa.ee.tsinghua.edu.cn/~liyue/), where I also earned my bachelor's degree.
+Welcome to my homepage! I am **Xuxuan Lin**, originally from Anxi, Fujian—a region renowned as a hometown of Chinese tea. I am currently a **Ph.D. student** in the Department of Electronic Engineering at **Tsinghua University**, advised by Associate Professor [Yue Li](https://oa.ee.tsinghua.edu.cn/~liyue/), where I also earned my bachelor's degree.
 
 My research began with antenna theory and terminal applications. Alongside my ongoing work on antennas, I actively explore intriguing electromagnetic phenomena and the interdisciplinary connections between electromagnetics and other fields, aiming to bring fresh insights to academia and the broader research community.
 
-Feel free to reach out via [email]({{ email.url }}) for academic discussions or potential collaborations!
+<span aria-hidden="true">😼</span> Feel free to reach out via [email]({{ email.url }}) for academic discussions or potential collaborations!
 
 # <span aria-hidden="true">🎓</span> Education
 {: #education }
